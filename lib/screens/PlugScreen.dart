@@ -16,7 +16,7 @@ class _plugScreenState extends State<plugScreen> {
       'Su_voltage': Su_voltage,
       'T_temperature': T_temperature,
       'flag': 'true',
-      'current': 0,
+      'current': 1,
       "energy": 0,
       'frequency': 0,
       'pf': 0,
@@ -26,24 +26,12 @@ class _plugScreenState extends State<plugScreen> {
       'voltage': 0,
     });
   }
-  void getDAta()async{
-    DocumentSnapshot variable = await FirebaseFirestore.instance.collection('smart_plug').doc('data').get();
-    s_voltage= variable['s_voltage'];
-    Su_voltage=variable['Su_voltage'];
-    T_temperature=variable['T_temperature'];
-  }
 
   double s_current = 1;
   double s_voltage = 100;
   double Su_voltage = 120;
   double T_temperature = 40;
   @override
-  void initState(){
-   getDAta();
-    // TODO: implement initState
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

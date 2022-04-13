@@ -1,8 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smart_plug/screens/homeScreen.dart';
 import 'package:smart_plug/screens/PlugScreen.dart';
 import 'package:smart_plug/screens/homeScreen.dart';
+import 'package:smart_plug/screens/infoScreen.dart';
 import 'package:smart_plug/splash.dart';
 
 import 'Variables/colors.dart';
@@ -38,7 +40,7 @@ class mainscreen extends StatefulWidget {
 
 class _mainscreenState extends State<mainscreen> {
   int currentSelection = 0;
-  final pages = [homeScreen(), plugScreen()];
+  final pages = [homeScreen(),infoScreen(), plugScreen()];
   String Heading = 'SmartPlug';
 
   @override
@@ -71,6 +73,7 @@ class _mainscreenState extends State<mainscreen> {
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.info), label: 'Info'),
           BottomNavigationBarItem(icon: Icon(Icons.edit), label: 'Set Values'),
         ],
       ),
