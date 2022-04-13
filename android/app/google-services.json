@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "286116508257",
+    "project_id": "smart-plug-5d62d",
+    "storage_bucket": "smart-plug-5d62d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286116508257:android:4617d7287d8682722db020",
+        "android_client_info": {
+          "package_name": "com.example.smart_plug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286116508257-blehucgkl17e7ifthf6t0plpb2o3ni4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbiZ1NGnND5LFkqk6b8yglfWMHJIAFF70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286116508257-blehucgkl17e7ifthf6t0plpb2o3ni4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
