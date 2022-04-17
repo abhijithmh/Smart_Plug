@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smart_plug/screens/homeScreen.dart';
 import 'package:smart_plug/screens/PlugScreen.dart';
-import 'package:smart_plug/screens/homeScreen.dart';
 import 'package:smart_plug/screens/infoScreen.dart';
 import 'package:smart_plug/splash.dart';
 
@@ -21,11 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: splashScreen());
+        home: const splashScreen());
   }
 }
 
@@ -40,29 +35,14 @@ class mainscreen extends StatefulWidget {
 
 class _mainscreenState extends State<mainscreen> {
   int currentSelection = 0;
-  final pages = [homeScreen(),infoScreen(), plugScreen()];
-  String Heading = 'SmartPlug';
+  final pages = [homeScreen(), infoScreen(), plugScreen()];
+  String Heading = 'SMART PLUG';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Container(
-            child: Text(Heading,
-                textAlign: TextAlign.center,
-                style: GoogleFonts.merriweather(
-                  textStyle: TextStyle(
-                    color: Colors.greenAccent[100],
-                    fontSize: 30,
-                  ),
-                )),
-          ),
-        ),
-        backgroundColor: appbarColor,
-      ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.deepPurple[200],
         selectedItemColor: Colors.white70,
         selectedIconTheme: IconThemeData(color: Colors.white),
         currentIndex: currentSelection,

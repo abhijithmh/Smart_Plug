@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-const appbarColor = Colors.grey;
-final backGroundColor = Colors.greenAccent[100];
+final appbarColor = Colors.deepPurple[300];
+final backGroundColor = Colors.indigo[100];
 

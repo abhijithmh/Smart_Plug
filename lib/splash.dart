@@ -9,7 +9,11 @@ class splashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
       duration: 3,
-      splash: Text("splash"),
+      splash: Image(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height/2,
+        image: NetworkImage('https://www.reviewgeek.com/p/uploads/2020/02/9aed2ae7.png?width=1200'),
+      ),
       nextScreen: mainscreen(),
       splashTransition: SplashTransition.slideTransition,
     );
